@@ -1,0 +1,30 @@
+{
+  "name": "sql-hotel",
+  "version": "0.0.1",
+  "description": "A base project to test the Sequelize NodeJS library",
+  "main": "bin/server.js",
+  "bin": {
+    "sql-hotel": "server.js"
+  },
+  "scripts": {
+    "start": "node bin/server.js"
+  },
+  "keywords": [
+    "sql",
+    "igz",
+    "nodejs",
+    "databases",
+    "hotel",
+    "booking"
+  ],
+  "author": "Nick M. Jaremek",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "bunyan": "^1.5.1",
+    "config": "^1.17.1",
+    "express": "^4.13.3",
+    "on-finished": "^2.3.0",
+    "restify-errors": "^3.1.0"
+  }
+}
