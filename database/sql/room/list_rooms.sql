@@ -1,0 +1,1 @@
+select id, name, status, room_size from rooms where status = $1

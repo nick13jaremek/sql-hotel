@@ -24,12 +24,9 @@
     "bunyan": "^1.5.1",
     "config": "^1.17.1",
     "express": "^4.13.3",
+    "massive": "^2.0.9",
     "method-override": "^2.3.5",
     "on-finished": "^2.3.0",
-    "pg": "^4.4.3",
-    "pg-hstore": "^2.3.2",
-    "restify-errors": "^3.1.0",
-    "sequelize": "^3.14.2",
-    "sequelize-cli": "^2.2.1"
+    "restify-errors": "^3.1.0"
   }
 }
