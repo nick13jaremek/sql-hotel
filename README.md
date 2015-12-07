@@ -65,5 +65,3 @@ the `down` function.
 *Note* Migration files are registered upon execution, that is, if you run your migrations again, those that were already executed will be skipped.
  This ensures the consistency of the database. If you need to rerun some migration that was already registered, remove its corresponding line from the
  `.migrate` file located at the `database/migrations` directory.
-
-z
