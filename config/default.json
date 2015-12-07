@@ -7,5 +7,8 @@
   "log": {
     "path": "logs/sql-hotel.log",
     "level": "debug"
+  },
+  "db": {
+    "connection": "postgres://postgres:password@localhost/sqlhotel"
   }
 }

@@ -7,7 +7,8 @@
     "sql-hotel": "server.js"
   },
   "scripts": {
-    "start": "node bin/server.js"
+    "start": "node bin/server.js",
+    "migrate": "NODE_CONFIG_DIR=../config migrate --chdir ./database"
   },
   "keywords": [
     "sql",
@@ -28,5 +29,8 @@
     "method-override": "^2.3.5",
     "on-finished": "^2.3.0",
     "restify-errors": "^3.1.0"
+  },
+  "devDependencies": {
+    "migrate": "^0.2.2"
   }
 }

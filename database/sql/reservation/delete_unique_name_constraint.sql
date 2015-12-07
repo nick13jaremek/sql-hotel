@@ -1,0 +1,1 @@
+alter table reservations drop constraint nameUniqueness
