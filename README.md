@@ -1,4 +1,4 @@
-# SQL-Hotel: the input/output of data guests
+# SQL-Hotel: a SQL small test project with NodeJS
 
 ## Introduction
 
@@ -8,7 +8,7 @@ includes flexible possibilities to manipulate PostgresSQL queries.
 ## Models
 
 Since the project is called SQL-Hotel, there exists a single database made of different tables. The single database is
-associated to the SQL-Hotel, a five starts digital building where ones can accomodate gracefully.
+associated to the SQL-Hotel, a five starts digital building where ones can accommodate gracefully.
 
 ### Reservations
 
