@@ -29,7 +29,7 @@ Reservations are related to a `Room` object through the foreign key (FK) labeled
 
 ### Rooms
 
-Rooms model the assets that the SQL-Hotel is made of. A room is the main service available to
+Rooms model the assets that the SQL-Hotel is composed of. A room is the main service available to
  any potential customer. An example of such an object is as follows:
 ```
 {
@@ -45,7 +45,7 @@ Room objects are related to the `reservations` table through the `id` <-> 'room_
 
 As its own name indicates, the SQL-Hotel operates on an SQL database, more precisely based on PostgreSQL.
 Due to the changing nature of data, the `reservations` and `rooms` tables will need to update their columns
- via removal, addition, constraints, etc...
+ via operations such as removal, addition, constraints, etc...
 
 In order to modify the SQL tables' schema, migrations can be created, programmed and run.
 
@@ -55,13 +55,15 @@ In order to modify the SQL tables' schema, migrations can be created, programmed
 2. Create a new migration file using the `migrate create <migration_file_name>` command. This will create a new JS file
  whose filename will have the {timestamp}_{migration_name} format.
 
-3. In the newly created migration file, import the `setup_massive` file.
+3. In the newly created migration file, import the `setup_massive` file located at the `database` directory.
 
 4. In the `database/sql` path, create two `sql` files for the new migration: one for the `up` function and one for
 the `down` function.
 
 5. Run `npm run migrate` to execute all the pending migration files.
 
-*Note* Migration files are registered upon execution, that is, if you run your migrations again, those that were already executed will be skipped.
- This ensures the consistency of the database. If you need to rerun some migration that was already registered, remove its corresponding line from the
- `.migrate` file located at the `database/migrations` directory.
+*Note* Migration files are marked as applied after execution, that is, if you run your migrations again, those that were
+already executed will be skipped.
+ This ensures the consistency of the database, by not applying duplicate constraints or other table structure changes
+  more than once. If you need to rerun some migration that was already registered, remove its corresponding line from
+  the `.migrate` file located at the `database/migrations` directory.

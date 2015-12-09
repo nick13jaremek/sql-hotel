@@ -1,1 +1,1 @@
-alter table reservations add constraint nameUniqueness UNIQUE (name)
+alter table reservations add constraint nameUniqueness unique (name)
