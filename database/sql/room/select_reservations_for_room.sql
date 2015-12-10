@@ -1,0 +1,1 @@
+select * from reservations where room_id = $1
