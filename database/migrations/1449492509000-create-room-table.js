@@ -1,6 +1,6 @@
 'use strict';
 const db = require('./../setup_massive');
-
+console.log('db', db);
 exports.up = function(next) {
   db.room.create_rooms_table(function(err) {
     if (err) return next(err);

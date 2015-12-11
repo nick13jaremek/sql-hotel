@@ -9,6 +9,7 @@
     "level": "debug"
   },
   "db": {
-    "connection": "postgres://postgres:password@localhost/sqlhotel"
+    "connection": "postgres://postgres:password@localhost/sqlhotel",
+    "scriptsDir": "./sql"
   }
 }
