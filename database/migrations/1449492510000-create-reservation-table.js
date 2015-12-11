@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 const db = require('./../setup_massive');
 
 exports.up = function(next) {
