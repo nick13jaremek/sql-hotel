@@ -6,4 +6,4 @@ const massive = require('massive');
 const config = require('config');
 const connectionStr = config.get('db.connection');
 
-module.exports = massive.connectSync({connectionString: connectionStr, scripts: './sql'});
+module.exports = massive.connectSync({connectionString: connectionStr, scripts: 'database/sql'});

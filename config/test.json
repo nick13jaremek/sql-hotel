@@ -1,0 +1,9 @@
+{
+  "log": {
+    "path": "logs/sql-hotel-test.log",
+    "level": "debug"
+  },
+  "db": {
+    "connection": "postgres://postgres:password@localhost/sqlhoteltest"
+  }
+}
