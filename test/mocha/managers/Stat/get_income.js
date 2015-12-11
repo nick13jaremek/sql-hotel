@@ -32,7 +32,15 @@ describe('Stat Manager::get income', function() {
       start_time: '2015-12-08T09:00:18.622Z',
       end_time: '2015-12-12T09:00:18.622Z',
       room_id: 1
-    }];
+    },
+      {
+        name: 'Mrs. Draper',
+        status: 'pending',
+        paid: 60.00,
+        start_time: '2015-12-08T09:00:18.622Z',
+        end_time: '2015-12-12T09:00:18.622Z',
+        room_id: 1
+      }];
 
     populate({rooms: [room], reservations: reservations}, done);
   });

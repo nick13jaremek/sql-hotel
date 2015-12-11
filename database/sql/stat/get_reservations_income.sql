@@ -1,1 +1,1 @@
-select sum(paid) from reservations where start_time >= $1 AND end_time <= $2
+select sum(paid) from reservations where start_time >= $1 AND end_time <= $2 AND status = 'completed'
