@@ -1,1 +1,1 @@
-select id, status, paid, name, start_time, end_time, room_id from reservations $1
+select id, status, paid, name, start_time, end_time, room_id from reservations where status = $1

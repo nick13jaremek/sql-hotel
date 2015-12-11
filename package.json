@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node bin/server.js",
     "migrate": "NODE_CONFIG_DIR=../config migrate --chdir ./database",
-    "lint": "eslint lib database bin",
+    "lint": "eslint lib database bin test",
     "test": "NODE_ENV=test ./node_modules/.bin/mocha ./test/mocha/**/*"
   },
   "keywords": [

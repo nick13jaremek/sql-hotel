@@ -24,12 +24,12 @@ beforeEach(function(callback) {
       });
     },
     createRoomsTable: function(done) {
-      massive.reservation.create_reservations_table(function() {
+      massive.room.create_rooms_table(function() {
         return done();
       });
     },
     createReservationsTable: function(done) {
-      massive.room.create_rooms_table(function() {
+      massive.reservation.create_reservations_table(function() {
         return done();
       });
     }
