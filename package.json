@@ -26,6 +26,7 @@
     "bunyan": "^1.5.1",
     "config": "^1.17.1",
     "express": "^4.13.3",
+    "lodash": "^3.10.1",
     "massive": "^2.0.9",
     "method-override": "^2.3.5",
     "on-finished": "^2.3.0",
