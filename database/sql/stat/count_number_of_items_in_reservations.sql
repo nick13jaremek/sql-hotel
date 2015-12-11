@@ -1,1 +1,1 @@
-select count(*) from reservations $1;
+select count(*) from reservations where status=$1;
